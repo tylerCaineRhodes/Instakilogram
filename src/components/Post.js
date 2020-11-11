@@ -36,7 +36,9 @@ function Post({ user, postId, username, caption, imageUrl }) {
   return (
     <div className='post'>
       <div className='postHeader'>
-        <Avatar className='postAvatar' alt={username} src='' />
+      <Avatar className='postAvatar' alt={username} src='' >
+        {username.substring(0, 1)}
+      </Avatar>
 
         <h3>{username}</h3>
       </div>
